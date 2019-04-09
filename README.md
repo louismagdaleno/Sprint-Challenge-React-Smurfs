@@ -29,9 +29,16 @@ In this challenge, you will create a Single Page Application complete with Clien
 Demonstrate your understanding of this Sprint's concepts by answering the following free-form questions. Edit this document to include your answers after each question. Make sure to leave a blank line above and below your answer so it is clear and easy to read by your project manager.
 
 - [ ] Explain the differences between `client-side routing` and `server-side routing`.
-- [ ] Which HTTP methods can be mapped to the CRUD acronym that we use when interfacing with APIs/Servers.
-- [ ] Mention three tools we can use to make AJAX requests.
 
+  With server side routing, each new page requested by the user is handled by the back end which serves the new page view to the user. With client side routing, the backend is only responsible for serving new data, not page views, and the routing is handled in the clients browser.
+- [ ] Which HTTP methods can be mapped to the CRUD acronym that we use when interfacing with APIs/Servers.
+
+GET / READ
+PUT / UPDATE
+DELETE / DELETE
+POST / CREATE
+- [ ] Mention three tools we can use to make AJAX requests.
+Axios, fetch, promises.
 
 ## Project Set Up
 
@@ -64,11 +71,11 @@ The MVP of this project will be broken up between 2 stages. Follow each step and
 
 Construct your Components to build a Single Page Application. Keep your components separate and design them as if they are pages before adding in your Router.
 
-- [ ] Construct an AXIOS request to retrieve an array all the Smurfs in the Smurf DB simply write a `GET` to the endpoint `/smurfs`.
-- [ ] Display those smurfs in a list on the screen.
-- [ ] Construct an AXIOS request to `POST` to add a Smurf to the Smurf DB you'll need all three fields.
-- [ ] Create a form that will allow users to add Smurfs to the Smurf DB.
-- [ ] If a Smurf is created correctly, you should see a response that is an array of Smurfs with unique id's assigned to each Smurf.
+- [x] Construct an AXIOS request to retrieve an array all the Smurfs in the Smurf DB simply write a `GET` to the endpoint `/smurfs`.
+- [x] Display those smurfs in a list on the screen.
+- [x] Construct an AXIOS request to `POST` to add a Smurf to the Smurf DB you'll need all three fields.
+- [x] Create a form that will allow users to add Smurfs to the Smurf DB.
+- [x] If a Smurf is created correctly, you should see a response that is an array of Smurfs with unique id's assigned to each Smurf.
 
 - Example:
 
@@ -84,11 +91,11 @@ Construct your Components to build a Single Page Application. Keep your componen
 
 Add a Router to this application by using React Router.
 
-- [ ] You'll start by wrapping your `root` component in the `Router` component.
-- [ ] Declare your routes with `Route`.
-- [ ] Then make it so you can navigate to your routes using `Link`.
-- [ ] Create two `routes` in your `App` component, one at `'/'` for your `Smurfs` component,and one at `/smurf-form` for your form.
-- [ ] Then in your `App` component, create a nav bar that will use `NavLink` to route to your different pages.
+- [x] You'll start by wrapping your `root` component in the `Router` component.
+- [x] Declare your routes with `Route`.
+- [x] Then make it so you can navigate to your routes using `Link`.
+- [x] Create two `routes` in your `App` component, one at `'/'` for your `Smurfs` component,and one at `/smurf-form` for your form.
+- [x] Then in your `App` component, create a nav bar that will use `NavLink` to route to your different pages.
 
 ## STRETCH PROBLEMS
 
